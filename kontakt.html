@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Završni rad </title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    
+    <nav class="navbar fixed-top" style="background-color: var(--bg-body);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="image/logo.png" 
+          alt="Logo" 
+          width="120"
+          height="40"
+          viewBox="0 0 120 24"/>
+        </a>
+        <button class="navbar-toggler"  style="background-color: var(--color-primary);" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">feel art</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">početna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projekti.html">projekti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trglanci.html">trgovački lanci</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="onama.html">o nama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">javi nam se</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+
+      <section class="hero" style="background-color: var(--bg-body)">
+        <div class="hero__content-inner">
+          <div class="hero__text-card-naslov">
+            <h1 class="hero__title-naslovna">
+              Imate li <span style="color: var(--color-primary);">projekt</span> na umu?<br>
+              Voljeli bismo čuti o tome!</h1>
+          </div>
+      </div>
+    </section>
+
+      <section class="section">
+        <div class="section__inner">
+          <article class="single-page">
+            <figure class="single-page__figure">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.2522128390983!2d15.868230119066524!3d46.14572361844129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765ed1bdbb64bdf%3A0x418f30a60bb121d8!2sPoduzetni%C4%8Dki%20centar%20Krapinsko-zagorske%20%C5%BEupanije!5e0!3m2!1sen!2shr!4v1691410161990!5m2!1sen!2shr"
+              width="600" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+            <p class="single-page__content">
+              
+              <section id="contact">
+                <h1>javi nam se</h1>
+
+                  <form id="contact-form" class="form-horizontal" role="form">
+                     
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                      </div>
+                    </div>
+              
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                          <input type="text" class="form-control" id="subject" placeholder="SUBJECT" name="subject" value="" required>
+                      </div>
+                  </div>
+                    
+              
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                    
+                    <button class="gumb" id="submit" type="submit" value="SEND">
+                        <span class="send-text">SEND</span>
+                    </button>
+                    
+                  </form>
+    
+              </section>  
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+   
+    <footer class="footer">
+      <div class="footer__addr">
+        <div class="footer__logo"><img src="image/logo-footer.png" alt="" class="footer-logo"></div>
+        <p>Gajeva 5<br>
+                49 000 Krapina<br>
+                Tel: 049 300 223, 049 300 255<br>
+                Fax: 049 300 224<br>
+                E-mail: info@fil-art.hr</p>
+      </div>
+      <ul class="footer__nav">
+        <li class="nav__item nav__item--extra">
+          <ul class="nav__ul nav__ul--extra">
+          </ul>
+        </li>
+        <li class="nav__item">
+            <li>
+              <a href="https://www.facebook.com/FilArtKrapina/?locale=hr_HR"><img src="image/fb-gumb.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com/filartkrapina/?hl=en"><img src="image/insta-gumb.png" alt="Instagram"></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+      <div class="legal">
+        <p>&copy; 2023 Dino Balić. All rights reserved.</p>
+    </footer>  
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $message = $_POST["message"];
+        
+        $to = "balic.dino@hotmail.com";
+        $subject = "Nova poruka sa kontakt forme";
+        $headers = "From: $email";
+        
+        mail($to, $subject, $message, $headers);
+        
+        /*Redirekcija nakon slanja forme*/ 
+
+        header("Location: kontakt.html");
+        exit;
+    }
+    ?>
+
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
